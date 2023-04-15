@@ -1,0 +1,20 @@
+{
+    "name": "test/task",
+    "description": "Magento 2 extension for Task",
+    "require": {
+        "php": "~7.2.0",
+        "magento/framework": "^100.0 || ^101.0 || ^102.0 || ^103.0 || ^104.0"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Test\\Task\\": ""
+        }
+    }
+}
