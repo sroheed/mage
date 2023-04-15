@@ -329,6 +329,7 @@ return [
         'Magento_WishlistGraphQl' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
+        'Task' => 1,
         'Temando_ShippingRemover' => 1
     ]
 ];

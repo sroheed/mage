@@ -1,0 +1,9 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Test_Task::menu_item" title="Task" module="Task" sortOrder="10" resource="Vendor_Module::menu_item" parent="Magento_Backend::content">
+            <action
+                method="setUrl"
+                xsi:type="string">[url]</action>
+        </add>
+    </menu>
+</config>
