@@ -379,3 +379,16 @@
 [2023-04-15T01:14:20.197797+00:00] main.INFO: Add of item with id Magento_CurrencySymbol::system_currency_symbols was processed [] []
 [2023-04-15T01:14:20.199751+00:00] main.INFO: Add of item with id PayPal_Braintree::settlement_report was processed [] []
 [2023-04-15T01:14:20.201496+00:00] main.INFO: Add of item with id PayPal_Braintree::virtual_terminal was processed [] []
+[2023-04-15T09:44:30.402125+00:00] main.ERROR: The contents from the "C:\xampp\htdocs\mage\app\code\Test\Task\etc\module.xml" file can't be read. Warning!file_get_contents(C:\xampp\htdocs\mage\app\code\Test\Task\etc\module.xml): Failed to open stream: No such file or directory
+#0 C:\xampp\htdocs\mage\vendor\magento\framework\Module\ModuleList\Loader.php(121): Magento\Framework\Filesystem\Driver\File->fileGetContents('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\mage\vendor\magento\framework\Module\ModuleList\Loader.php(83): Magento\Framework\Module\ModuleList\Loader->getModuleConfigs()
+#2 C:\xampp\htdocs\mage\vendor\magento\framework\Module\Status.php(187): Magento\Framework\Module\ModuleList\Loader->load()
+#3 C:\xampp\htdocs\mage\vendor\magento\framework\Module\Status.php(167): Magento\Framework\Module\Status->getAllModules(Array)
+#4 C:\xampp\htdocs\mage\setup\src\Magento\Setup\Console\Command\AbstractModuleManageCommand.php(84): Magento\Framework\Module\Status->getModulesToChange(true, Array)
+#5 C:\xampp\htdocs\mage\vendor\symfony\console\Command\Command.php(298): Magento\Setup\Console\Command\AbstractModuleManageCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\xampp\htdocs\mage\vendor\symfony\console\Application.php(1040): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\xampp\htdocs\mage\vendor\symfony\console\Application.php(301): Symfony\Component\Console\Application->doRunCommand(Object(Magento\Setup\Console\Command\ModuleEnableCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\xampp\htdocs\mage\vendor\magento\framework\Console\Cli.php(116): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\xampp\htdocs\mage\vendor\symfony\console\Application.php(171): Magento\Framework\Console\Cli->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 C:\xampp\htdocs\mage\bin\magento(23): Symfony\Component\Console\Application->run()
+#11 {main} [] []
